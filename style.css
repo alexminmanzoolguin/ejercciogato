@@ -1,7 +1,7 @@
 *{
    padding: 0px;
    margin: 0px;
-   box-sizing: border-box;
+   /*box-sizing: border-box;*/
 }
 
 .contenedor{
@@ -16,20 +16,23 @@
     background-image: url(./findo.png);
     background-size: cover;
 
+  
+
 }
 
-.contenedor div{
-background-color: black;
+/*.contenedor div{
+background-color: rgb(53, 175, 169);
 }
-
+*/
 
 .cuadro {
 width: 600px;
 height: 600px;
 display: grid;
 grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:1fr 1fr 1fr;
 gap: 10px;
-background-color: black;
+background-color: rgb(202, 230, 48);
 }
 
 .cuadro div{
@@ -38,12 +41,64 @@ background-color: black;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 80px;
+    font-size: 85px;
     font-family: Arial, Helvetica, sans-serif;
 
 }
 
 .cuadro div:hover{
-    background-color: rgba(217, 193, 230, 0.267);
+    background-color: rgba(177, 88, 224, 0.267);
     cursor: pointer;
+}
+
+button{
+  padding: 20px 10px;
+  background-color: rgb(238, 17, 120);  
+  color: white;
+  outline: none;
+  border: 0px;
+  border-radius: 8px;
+  width: 200px;
+  margin-top: bold;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: rgb(233, 122, 233);
+
+}
+
+.lineContainer{
+    position: relative;
+
+}
+#linea{
+    position: absolute;
+    display: block;
+    background-color:  rgb(93, 93, 224);
+    
+}
+
+
+.linehorizontal{
+
+    display:block;
+    height: 10px;
+    background-color: rgb(93, 93, 224);
+    top: 100px;
+    left: 0px;
+
+}
+.linevertical{
+    
+   
+    display: block;
+    height: 100%;
+    background-color:  rgb(93, 93, 224);
+    width: 10px;
+    top: 0px;
+    left: 0px;
+ 
 }

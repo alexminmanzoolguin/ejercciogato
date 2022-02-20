@@ -4,11 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css" type="text/css">
-    <title>Gatito</title>
-</head>
+  <link type="text/css" href="./style.css" rel="stylesheet" >
 <body>
     <div class="contenedor">
+      <div class="lineContainer">
+         <div id="linea"></div>
+         <div id="linehorizontal"></div>
+         <div id="linevertica"></div>
+        
+       
   <div class="cuadro">
       <div id="1" onclick="handleClick(event)"></div>
       <div id="2" onclick="handleClick(event)"></div>
@@ -18,8 +22,10 @@
       <div id="6" onclick="handleClick(event)"></div>
       <div id="7" onclick="handleClick(event)"></div>
       <div id="8" onclick="handleClick(event)"></div>
-      <div id="9"onclick="handleClick(event)"></div>
-</div>
+      <div id="9" onclick="handleClick(event)"></div>
+    </div>
+     </div>
+<button onclick="reload()">REINICIAR</button>
   </div>
 </body>
 <script src="./index.js"></script>
