@@ -92,8 +92,6 @@ button:hover{
 
 }
 .linevertical{
-    
-   
     display: block;
     height: 100%;
     background-color:  rgb(93, 93, 224);
@@ -101,4 +99,15 @@ button:hover{
     top: 0px;
     left: 0px;
  
+}
+
+#diagonal{
+    display: block;
+    position:fixed;
+    border-radius: 0px; 
+    top: 0px;
+    left: 0px;
+    margin-top:0px; 
+    transform: rotate(240deg);
+    background-color:  rgb(93, 93, 224);
 }

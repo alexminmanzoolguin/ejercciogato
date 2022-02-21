@@ -82,59 +82,60 @@ const veridicarVictoria=() =>{
         forma8
         ){
             const linea=document.getElementById('linea');
+            const diagonal=document.getElementById('diagonal');
             if(forma1){
-                linea.style.height ='10px';
-                linea.style.width = '600px';
-                linea.style.top = '100px';
-                linea.style.left = '0px'; 
+                linea.style.height =`10px`;
+                linea.style.width = `600px`;
+                linea.style.top = `100px`;
+                linea.style.left = `0px`; 
             }else if(forma2){
-                linea.style.height ='10px';
-                linea.style.width = '600px';
-                linea.style.top = '345px';
-                linea.style.left = '0px'; 
+                linea.style.height =`10px`;
+                linea.style.width = `600px`;
+                linea.style.top = `285px`;
+                linea.style.left = `0px`; 
             }else if(forma3){
-                linea.style.height ='10px';
-                linea.style.width = '600px';
-                linea.style.top = '480px';
-                linea.style.left = '0px'; 
+                linea.style.height =`10px`;
+                linea.style.width = `600px`;
+                linea.style.top = `490px`;
+                linea.style.left = `0px`; 
             }else if(forma4){
-                linea.style.height ='600px';
-                linea.style.width = '10px';
-                linea.style.top = '0px';
-                linea.style.left = '90px'; 
+                linea.style.height =`600px`;
+                linea.style.width = `10px`;
+                linea.style.top = `0px`;
+                linea.style.left = `90px`; 
             
             }else if(forma5){
-                linea.style.height ='600px';
-                linea.style.width = '10px';
-                linea.style.top = '0px';
-                linea.style.left = '295px'; 
+                linea.style.height =`600px`;
+                linea.style.width = `10px`;
+                linea.style.top = `0px`;
+                linea.style.left = `295px`; 
 
             }else if(forma6){
-                linea.style.height ='600px';
-                linea.style.width = '10px';
-                linea.style.top = '0px';
-                linea.style.left = '500px';
+                linea.style.height =`600px`;
+                linea.style.width = `10px`;
+                linea.style.top = `0px`;
+                linea.style.left = `500px`;
+
             }else if(forma7){
-                linea.style.height ='600px';
-                linea.style.width = '10px';
-                linea.style.top = '0px';
-                linea.style.left = '0px';
-                linea.style.rotate('80');
-              
-             
+               
+                diagonal.style.height =`10px`;
+                diagonal.style.width = `650px`;
+                diagonal.style.top=`420px`;
+               diagonal.style.left = `565px`;
+              // diagonal.style.borderRadius= `0px`;
+               diagonal.style.transform= `rotate(46deg)`;
+
             }else if(forma8){
-                linea.style.height ='10px';
-                linea.style.width = '600px';
-                linea.style.top = '0px ';
-                linea.style.left = '0px';
-                linea.style.rotate('80');
+                diagonal.style.height =`650px`;
+                diagonal.style.width = `10px`;
+                diagonal.style.top=`85px`;
+                diagonal.style.left = `900px`;
+              // diagonal.style.borderRadius= `0px`;
+               diagonal.style.transform= `rotate(45deg)`
             
             }
 
-            /*linea.style.height ='10px';
-            linea.style.width = '600px';
-            linea.style.top = '100px';
-            linea.style.left = '0px'; */
+         
        victoria=true;
         alert(`LOS GANADORES SON LA, ${turno ? "O" :"X"}`);
     }else{
@@ -158,10 +159,18 @@ const reload =() =>{
     const div9 = document.getElementById(9);
 
     const linea=document.getElementById('linea');
-            linea.style.height = '0px';
-            linea.style.width = '0px';
-            linea.style.top = '0px';
-            linea.style.left = '0px'; 
+            linea.style.height = `0px`;
+            linea.style.width = `0px`;
+            linea.style.top = `0px`;
+            linea.style.left = `0px`; 
+        const diagonal=document.getElementById('diagonal');
+
+            diagonal.style.height =`0px`;
+            diagonal.style.width = `0px`;
+              diagonal.style.top = `0px`;
+               diagonal.style.left = `0px`;
+           diagonal.style.borderRadius= `0px`;
+           diagonal.style.transform=`rotate(0deg)`;   
 
     div1.innerText = "";
     div2.innerText = "";
